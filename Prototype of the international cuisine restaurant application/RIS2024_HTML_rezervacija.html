@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Okusi Svijeta</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-dark-custom text-white">
+
+<!-- Header -->
+<header class="header-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <h1 class="text-gold navbar-brand">Okusi Svijeta</h1>
+            <div class="navigacija ml-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="text-gold nav-link" href="RIS2024_HTML_pocetna.html">Naslovnica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-gold nav-link" href="RIS2024_HTML_o_nama.html">O nama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-gold nav-link" href="RIS2024_HTML_jelovnik.html">Jelovnik</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="text-gold nav-link" href="RIS2024_HTML_rezervacija.html">Rezervacija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-gold nav-link" href="RIS2024_HTML_specijalne_ponude.html">Specijalne ponude</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container my-5 py-5 text-center text-gold mb-4 bg-dark-custom">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <h2 class="mb-4 text-gold text-left">Rezerviraj stol</h2>
+
+            <form method="POST" action="process.php" novalidate class="text-gold">
+                <div class="form-row mb-3">
+                    <div class="col-md-6 mb-3">
+                        <input id="ime" type="text" name="ime" placeholder="Ime" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input id="prezime" type="text" name="prezime" placeholder="Prezime" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-12 mb-3">
+                        <input id="email" type="email" name="email" placeholder="Email" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+                <div class="form-row mb-3">
+                    <div class="col-12 mb-3">
+                        <input id="broj_telefona" type="tel" name="broj telefona" placeholder="Broj telefona" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-md-6 mb-3">
+                        <input type="date" id="datum" name="datum" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="time" id="vrijeme" name="vrijeme" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-12 mb-3">
+                        <input type="number" id="broj_osoba" placeholder="Broj osoba" name="broj osoba" min="1" max="6" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg mt -4">Rezerviraj</button>
+            </form >
+        </div >
+        <br>
+        <div class="col-lg-6 col-sm-12">
+                <h2 class="mb-4 text-gold text-right">Catering</h2>
+
+                <form method="POST" action="process.php" novalidate class="text-gold">
+                <div class="form-row mb-3">
+                    <div class="col-md-6 mb-3">
+                        <input id="ime1" type="text" name="ime" placeholder="Ime" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input id="prezime1" type="text" name="prezime" placeholder="Prezime" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-12 mb-3">
+                        <input id="email1" type="email" name="email" placeholder="Email" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+                <div class="form-row mb-3">
+                    <div class="col-12 mb-3">
+                        <input id="broj_telefona1" type="tel" name="broj telefona" placeholder="Broj telefona" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-md-6 mb-3">
+                        <input type="date" id="datum1" name="datum" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="time" id="vrijeme1" name="vrijeme" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col-12 mb-3">
+                        <input type="number" id="broj_osoba1" placeholder="Broj osoba" name="broj osoba" min="1" max="1000" required class="form-control bg-dark-custom text-white border-gold">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg mt -4">Naruči</button>
+            </form>
+            </div>
+        </div>
+        </div>
+
+<!-- Footer -->
+    <footer class="bg-dark-custom section-top-main">
+        <div class="jumbotron" style="margin-bottom:0; background-color: #2A2A2A;">
+            <br>
+            <div class="container text-center" style="margin:0 auto;">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-4 text-center">
+                        <h4 class="text-gold">O nama</h4>
+                        <p class="text-white text-left">Istinski strastveni u spoju kulinarskih tradicija diljem svijeta, naši kuhari donose autentične okuse talijanske, indijske, meksičke,
+                            kineske i japanske kuhinje. Ovdje se susreću čarolija, kreativnost i ljubav prema hrani kako bismo vam pružili nezaboravno gastronomsko
+                            iskustvo.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center">
+                        <h4 class="text-gold">Korisni linkovi</h4>
+                        <ul class="list-unstyled text-left" style="display:inline-block;">
+                            <li><a class="text-white" href="RIS2024_HTML_pocetna.html">Naslovnica</a></li>
+                            <li><a class="text-white" href="RIS2024_HTML_o_nama.html">O nama</a></li>
+                            <li><a class="text-white" href="RIS2024_HTML_jelovnik.html">Jelovnik</a></li>
+                            <li><a class="text-white" href="RIS2024_HTML_rezervacija.html">Rezervacija</a></li>
+                            <li><a class="text-white" href="RIS2024_HTML_specijalne_ponude.html">Specijalne ponude</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center">
+                        <h4 class="text-gold">Kontakt</h4>
+                        <div class="d-inline-block text-left">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="footer-icon"><i class="fa fa-phone text-gold" aria-hidden="true"></i></span>
+                                <div class="contact-text text-white ml-2">+9134567890</div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="footer-icon"><i class="fa fa-envelope-o text-gold" aria-hidden="true"></i></span>
+                                <div class="contact-text text-white ">okusisvijeta@gmail.com</div>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="footer-icon"><i class="fa fa-map-marker text-gold" aria-hidden="true"></i></span>
+                                <div class="contact-text text-white ml-2">Zagreb</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="footer-icon mx-2"><i class="fa fa-facebook-official text-gold" aria-hidden="true"></i></span>
+                                <span class="footer-icon mx-2"><i class="fa fa-instagram text-gold" aria-hidden="true"></i></span>
+                                <span class="footer-icon mx-2"><i class="fa fa-twitter-square text-gold" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <div class="text-center text-white py-3">© Copyright 2024. All rights reserved.</div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO+Mizj6ZYZZJm2V0ZJzlY0+3Dx9Th+osn3fD3FqTR7tr/9j3fMrRmztkD4z" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xM6B5z6W5" crossorigin="anonymous"></script>
+
+</body>
+</html> 
